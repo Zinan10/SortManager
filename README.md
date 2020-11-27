@@ -6,7 +6,12 @@ The task given was to implement a sort manager program whereby a user through a 
 
 ##### Table of Contents  
 [Requirements](#requirements)  
-[Brief Introduction](#brief-introduction)  
+[Brief Introduction](#brief-introduction) 
+[Code Snippets](#code-snippets) 
+[Future Work](#future-work) 
+
+
+
 
  
   
@@ -65,3 +70,37 @@ This program was given to us to develop after learning about exceptions, loggers
         while (choice >= 1 || choice <= 3);
     }
 ```
+
+```java
+public class RandomArrayGenerator
+{
+
+    static  int[] sortedArray;
+    static int[] unsortedArray;
+    Random random = new Random();
+
+
+
+
+public int[] generateRandomArray (int arraySize)
+
+{
+
+    sortedArray = new int[arraySize];
+    unsortedArray = new int[arraySize];
+    for (int i = 0; i < arraySize; i++) {
+        sortedArray[i] = random.nextInt(20) + 1;
+        unsortedArray[i] = sortedArray[i];
+    }
+    return unsortedArray;
+
+}
+
+}
+```
+
+## Future Work
+
+- Implementing a proper sort factory class/interface to handle the user choice of sort
+- Adding a GUI to make the sorting more attractive
+- Adding test cases to ensure the values returned are correct.
