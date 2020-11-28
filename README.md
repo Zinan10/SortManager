@@ -1,4 +1,12 @@
 # Sort Manager Project
+
+### Tools Used
+
+![git](https://img.shields.io/badge/git-%23F05032.svg?&style=for-the-badge&logo=git&logoColor=white)
+![intellij](https://img.shields.io/badge/intelliJ%20IDEA-%23000000.svg?&style=for-the-badge&logo=intellij-idea&logoColor=white)
+![java](https://img.shields.io/badge/java-%23ED8B00.svg?&style=for-the-badge&logo=java&logoColor=white)
+![maven](https://img.shields.io/badge/Apache%20Maven-%23C71A36.svg?&style=for-the-badge&logo=apache-maven&logoColor=white)
+
 <img src = "https://embed-ssl.wistia.com/deliveries/70d6f4e10e2badb5ef394f00c17ad2bc1c14f6e7.jpg" width = "650px" >
 
 The task given was to implement a sort manager program whereby a user through a user input will be able to have a given array of values sorted with whichever one of the three choices given to them. The user is also forced to valid input as input validation is placed in check to manage this. The user is given a choice of either a bubble sort , a merge sort and a binary sort.
