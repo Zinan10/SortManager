@@ -102,6 +102,4 @@ public int[] generateRandomArray (int arraySize)
 
 ## Future Work
 
-- Implementing a proper sort factory class/interface to handle the user choice of sort
 - Adding a GUI to make the sorting more attractive
-- Adding test cases to ensure the values returned are correct.
