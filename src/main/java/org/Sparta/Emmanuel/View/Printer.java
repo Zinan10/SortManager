@@ -10,6 +10,7 @@ import java.util.Arrays;
 public class Printer
 {
   BinaryTreeImpl btl = null;
+  BubbleSort bubbleSort = new BubbleSort();
     public void printArray(int[]theArray)
 
     {
@@ -66,8 +67,8 @@ public class Printer
     public void printBubbleArrays()
 
     {
-        System.out.println("Old array " + Arrays.toString(BubbleSort.getBubbleUnsortedArray()));
-        System.out.println("Sorted array " + Arrays.toString(BubbleSort.getBubbleSortedArray()));
+        System.out.println("Old array " + Arrays.toString(bubbleSort.getBubbleUnsortedArray()));
+        System.out.println("Sorted array " + Arrays.toString(bubbleSort.getBubbleSortedArray()));
     }
 
     public void printMergeArrays()

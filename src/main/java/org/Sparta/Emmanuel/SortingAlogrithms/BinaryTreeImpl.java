@@ -137,6 +137,14 @@ public class BinaryTreeImpl implements BinaryTree {
 
     }
 
+    public String getTreeAsc(int[]toSort) {
+        toSort = new int[numberOfNodes];
+        theCount = 0;
+        sortTreeAsc(rootNode);
+        return Arrays.toString(toSort);
+
+    }
+
     @Override
     public String getSortedTreeDesc() {
         sortedTree = new int[numberOfNodes];
@@ -144,7 +152,12 @@ public class BinaryTreeImpl implements BinaryTree {
         sortTreeDesc(rootNode);
         return Arrays.toString(sortedTree);
     }
-
+    public String getTreeDesc(int[]toSort) {
+        toSort = new int[numberOfNodes];
+        theCount = 0;
+        sortTreeDesc(rootNode);
+        return Arrays.toString(toSort);
+    }
     private Node findNode(int element) {
         Node node = rootNode;
         while (node != null){

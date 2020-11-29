@@ -11,7 +11,7 @@ public class BubbleSort
 
 {
     private static Logger theLogger = LogManager.getLogger(BubbleSort.class);
-   static Printer printer = new Printer();
+    static Printer printer = new Printer();
 
     public static int[] getBubbleSortedArray() {
         return bubbleSortedArray;
@@ -25,28 +25,30 @@ public class BubbleSort
     static int[] bubbleUnsortedArray;
 
 
+
+
     public static void bubblesort (int [] array)
 
     {
-int temporary = 0;
+        int temporary = 0;
 
-for (int i = 0; i < array.length; i++)
+        for (int i = 0; i < array.length; i++)
 
-{
-    for (int j = 1; j <array.length - i; j++)
+        {
+            for (int j = 1; j <array.length - i; j++)
 
-    {
-if(array[j - 1] > array[j])
+            {
+                if(array[j - 1] > array[j])
 
-{
-    temporary = array[j-1];
-    array[j-1] = array[j];
-    array[j] = temporary;
+                {
+                    temporary = array[j-1];
+                    array[j-1] = array[j];
+                    array[j] = temporary;
 
 
-}
-    }
-}
+                }
+            }
+        }
 
 
     }
@@ -63,8 +65,8 @@ if(array[j - 1] > array[j])
             try {
                 arraySize = scanner.nextInt();
             } catch (Exception e) {
-            printer.printArrayError();
-            theLogger.error("Value entered is invalid " + " " + e.getMessage());
+                printer.printArrayError();
+                theLogger.error("Value entered is invalid " + " " + e.getMessage());
                 e.printStackTrace();
             } finally {
                 scanner = new Scanner(System.in);
@@ -85,6 +87,12 @@ if(array[j - 1] > array[j])
         bubblesort(bubbleSortedArray);
 
 
+    }
+
+    public int[] getSortedArray(int[] bubbleUnsortedArray)
+    {
+        bubblesort(bubbleUnsortedArray);
+        return bubbleUnsortedArray;
     }
 
 }

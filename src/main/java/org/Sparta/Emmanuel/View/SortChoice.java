@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class SortChoice
 
 {
-static Printer printer = new Printer();
+    static Printer printer = new Printer();
 
     public static void printArrays()
 
@@ -31,16 +31,16 @@ static Printer printer = new Printer();
 
     public static void printMerge()
 
-{
-    Merge.mergingArray();
-    printer.printMergeArrays();
-}
+    {
+        Merge.mergingArray();
+        printer.printMergeArrays();
+    }
 
-public static void printBSTASC() throws ChildNotFoundException {
+    public static void printBSTASC() throws ChildNotFoundException {
         printer.printAscending();
 
 
-}
+    }
 
     public static void printBSTDSC()
 

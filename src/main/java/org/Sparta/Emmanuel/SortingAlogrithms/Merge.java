@@ -12,8 +12,8 @@ public class Merge
 {
 
     private static Logger theLogger = LogManager.getLogger(Merge.class);
-  static  int[] sortedArray;
-  static int[] unsortedArray;
+    static  int[] sortedArray;
+    static int[] unsortedArray;
 
     static Printer printer = new Printer();
 
@@ -55,11 +55,6 @@ public class Merge
     }
 
 
-    int[] firstArray;
-
-    int[] secondArray;
-
-    int[] mergedArray = new int[firstArray.length + secondArray.length];
 
     public static void start()
 
@@ -148,6 +143,11 @@ public class Merge
 
     }
 
+    public int[] getMergedArray(int[] unsortedArray){
+        splitAndMerge(unsortedArray);
+        return unsortedArray;
+    }
+
     public static int[] getSortedArray() {
         return sortedArray;
     }
@@ -156,17 +156,6 @@ public class Merge
         return unsortedArray;
     }
 
-    public int[] getFirstArray() {
-        return firstArray;
-    }
-
-    public int[] getSecondArray() {
-        return secondArray;
-    }
-
-    public int[] getMergedArray() {
-        return mergedArray;
-    }
 
 
 }
